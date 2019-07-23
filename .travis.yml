@@ -16,6 +16,7 @@ before_install:
   - sudo -H pip install requests
   - sudo -H apt-get -qq install xvfb python-virtualenv chromium-browser
   - wget http://chromedriver.storage.googleapis.com/index.html?path=2.46/chromedriver_linux64.zip
+  - sudo -H apt-get install unzip
   - sudo -H unzip chromedriver_linux64.zip 
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
