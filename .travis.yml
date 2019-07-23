@@ -1,8 +1,8 @@
 language: python
 dist: xenial
 python:
-  - "2.7.12"
-env: one_node_bdd
+  - "2.7"
+env: explorer
 sudo: required
 
 cache:
@@ -15,7 +15,7 @@ before_install:
   - sudo -H pip install --upgrade pip
   - sudo -H pip install requests
   - sudo -H apt-get -qq install xvfb python-virtualenv chromium-browser
-  - wget https://npm.taobao.org/mirrors/chromedriver/2.46/chromedriver_linux64.zip
+  - wget http://chromedriver.storage.googleapis.com/index.html?path=2.46/chromedriver_linux64.zip
   - unzip chromedriver_linux64.zip 
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
