@@ -10,6 +10,13 @@ from Config import Config
 import HTMLTestRunner_cn
 import time
 import os
+import sys
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#print BASE_DIR
+libPath = os.path.abspath('../../')
+#libPath = os.path.abspath('../../Config')
+sys.path.append(libPath)
+#print sys.path
 
 class viewSettings(unittest.TestCase):
     def setUp(self):
@@ -63,11 +70,11 @@ class viewSettings(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
-#if __name__ == "__main__":
-if __name__ == "viewSettings":
+if __name__ == "__main__":
+#if __name__ == "viewSettings":
     #current_time = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
     #suite = unittest.TestLoader().discover("viewSettings")
-    print("test start")
+    print("Test start")
     suite = unittest.TestSuite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(viewSettings))
     now = time.strftime('%Y-%m-%d%H%M%S')

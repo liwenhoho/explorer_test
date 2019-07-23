@@ -6,6 +6,10 @@ import random
 import re
 from time import sleep
 from Config import Config
+import os
+import sys
+libPath = os.path.abspath('../')
+sys.path.append(libPath)
 
 class utilFunc(object):
     #host = 'http://123.57.60.155:8545/'
