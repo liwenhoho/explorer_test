@@ -13,20 +13,22 @@ env:
     - IS_UPLOAD=true
 
 before_install:
-  - sudo -H pip install selenium
-  - sudo -H pip install unittest2
   - sudo -H pip install --upgrade pip
+  - sudo -H pip install selenium
+  - python -m pip install -U selenium
+  - sudo -H pip install unittest2
   - sudo -H pip install requests
-  - sudo -H apt-get -qq install xvfb python-virtualenv chromium-browser
+  - sudo -H apt-get -qq install xvfb python-virtualenv 
+  #chromium-browser
   - wget http://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip
   - sudo -H apt-get install unzip
   - sudo -H unzip chromedriver_linux64.zip 
   - pwd
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
-  - export CHROME_HOME=chromium-browser
+  #- export CHROME_HOME=chromium-browser
   - export PYTHONPATH=$PYTHONPATH:/home/travis/build/palletone/explorer_test/PalletoneExplorer/
-  - Xvfb -ac :7 -screen 0 1280x1024x8 &
+  - Xvfb -ac :7 -screen 0 1366x768x8 &
   #- export DISPLAY=:7
   - sleep 3
 
@@ -34,7 +36,9 @@ install:
   - sudo -H apt-get install lftp
   - chmod +x PalletoneExplorer/upload2Ftp.sh
 
-script:    
+script:
+  - echo $PATH
+  - echo $PYTHONPATH
   - python PalletoneExplorer/more/viewSettings/viewSettings.py
 #env:
   #- BROWSER="Chrome"
