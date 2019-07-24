@@ -20,7 +20,7 @@ before_install:
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H pip install --upgrade pip
   - sudo -H pip install --target=${PIP_PATH} selenium
-  #- python -m pip install -U selenium
+  - python -m pip install -U selenium
   - sudo -H pip install --target=${PIP_PATH} unittest2
   - sudo -H pip install --target=${PIP_PATH} requests
   - sudo -H apt-get -qq install xvfb python-virtualenv 
