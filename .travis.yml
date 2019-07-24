@@ -3,6 +3,8 @@ dist: xenial
 sudo: required
 addons:
   chrome: stable
+  apt:
+    update: true
 python:
   - "2.7"
 env: explorer
@@ -43,7 +45,3 @@ after_script:
   - |
     if [ $IS_UPLOAD == 'true' ]; then
       ./bdd/upload2Ftp.sh ${FTP_PWD} ${TRAVIS_BRANCH};
-        
-addons:
-  apt:
-    update: true
