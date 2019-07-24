@@ -24,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/more/viewSettings/singlePage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -39,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utilFunc/utilFunc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
+            <state relative-caret-position="190">
               <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
                 <element signature="e#22#37#0" expanded="true" />
@@ -51,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettingsPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
+            <state relative-caret-position="418">
               <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="e#20#63#0" expanded="true" />
@@ -60,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1198">
+            <state relative-caret-position="171">
               <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
             </state>
           </provider>
@@ -278,7 +278,7 @@
       <workItem from="1563328528020" duration="9063000" />
       <workItem from="1563346996580" duration="18308000" />
       <workItem from="1563775165903" duration="4259000" />
-      <workItem from="1563852349149" duration="11980000" />
+      <workItem from="1563852349149" duration="12592000" />
     </task>
     <task id="LOCAL-00001" summary="Explorer">
       <created>1562062719057</created>
@@ -323,7 +323,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108378000" />
+    <option name="totallyTimeSpent" value="108990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -484,9 +484,12 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/report_template/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/utilFunc/utilFunc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
+        <state relative-caret-position="190">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
             <element signature="e#22#37#0" expanded="true" />
@@ -496,11 +499,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettingsPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
+        <state relative-caret-position="418">
           <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="e#20#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -511,16 +521,6 @@
           <folding>
             <element signature="e#20#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report_template/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1198">
-          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>

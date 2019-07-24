@@ -7,17 +7,19 @@ addons:
     update: true
 python:
   - "2.7"
-env: 
+env:
   global:
     #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
     - IS_UPLOAD=true
+    - PIP_PATH=/usr/lib/python2.7/site-packages/
 
 before_install:
+  - export PYTHONPATH=/home/travis/build/palletone/explorer_test/PalletoneExplorer:/usr/bin:/usr/lib/python2.7/:$PYTHONPATH
   - sudo -H pip install --upgrade pip
-  - sudo -H pip install selenium
+  #- sudo -H pip install selenium
   - python -m pip install -U selenium
-  - sudo -H pip install unittest2
-  - sudo -H pip install requests
+  - sudo -H pip install --target=${PIP_PATH} unittest2
+  - sudo -H pip install --target=${PIP_PATH} requests
   - sudo -H apt-get -qq install xvfb python-virtualenv 
   #chromium-browser
   - wget http://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip
@@ -27,7 +29,6 @@ before_install:
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
   #- export CHROME_HOME=chromium-browser
-  - export PYTHONPATH=$PYTHONPATH:/home/travis/build/palletone/explorer_test/PalletoneExplorer/
   - Xvfb -ac :7 -screen 0 1366x768x8 &
   #- export DISPLAY=:7
   - sleep 3
@@ -39,6 +40,8 @@ install:
 script:
   - echo $PATH
   - echo $PYTHONPATH
+  - ls -l /usr/local/lib/python2.7/dist-packages
+  - ls -l /usr/lib/python2.7/dist-packages
   - python PalletoneExplorer/more/viewSettings/viewSettings.py
 #env:
   #- BROWSER="Chrome"
