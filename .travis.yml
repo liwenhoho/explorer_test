@@ -7,7 +7,7 @@ addons:
     update: true
 python:
   - "2.7"
-env: explorer
+env: 
   global:
     #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
     - IS_UPLOAD=true
