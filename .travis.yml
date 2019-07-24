@@ -15,6 +15,7 @@ env:
 
 before_install:
   - export PYTHONPATH=/home/travis/build/palletone/explorer_test/PalletoneExplorer:/usr/bin:/usr/lib/python2.7/:/usr/local/lib/python2.7/
+  - whereis python2.7
   - ls -l /usr/lib/python2.7/dist-packages
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H pip install --upgrade pip
@@ -43,6 +44,8 @@ script:
   - echo $PATH
   - echo $PYTHONPATH
   - ls -l /usr/local/lib/python2.7/dist-packages
+  - find / -name "*sysconfigdata_nd.py"
+  - sudo ln -s /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.py /usr/lib/python2.7/
   - python PalletoneExplorer/more/viewSettings/viewSettings.py
 #env:
   #- BROWSER="Chrome"
