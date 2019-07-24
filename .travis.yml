@@ -26,8 +26,8 @@ before_install:
   - sudo mv chromedriver /usr/bin/
   - export CHROME_HOME=chromium-browser
   - export PYTHONPATH=$PYTHONPATH:/home/travis/palletone/explorer_test/PalletoneExplorer/
-  - sudo -H apt-get install Xvfb
-  - Xvfb -ac :7 -screen 0 1280x1024x8 > /dev/null 2>&1
+  - sudo -H apt-get install xvfb
+  - xvfb -ac :7 -screen 0 1280x1024x8 > /dev/null 2>&1
   - export DISPLAY=:7
   - sleep 3
 
