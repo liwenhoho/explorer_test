@@ -25,14 +25,14 @@ before_install:
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
   - export CHROME_HOME=chromium-browser
-  - export PYTHONPATH=$PYTHONPATH:/home/travis/palletone/explorer_test/PalletoneExplorer/
+  - export PYTHONPATH=$PYTHONPATH:/home/travis/build/palletone/explorer_test/PalletoneExplorer/
   - Xvfb -ac :7 -screen 0 1280x1024x8 &
   #- export DISPLAY=:7
   - sleep 3
 
 install:
   - sudo -H apt-get install lftp
-  - chmod +x upload2Ftp.sh
+  - chmod +x PalletoneExplorer/upload2Ftp.sh
 
 script:    
   - python PalletoneExplorer/more/viewSettings/viewSettings.py
