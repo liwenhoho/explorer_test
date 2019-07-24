@@ -14,7 +14,7 @@ env:
 
 before_install:
   - sudo -H pip install selenium
-  - sudo -H pip install unittest
+  - sudo -H pip install unittest2
   - sudo -H pip install --upgrade pip
   - sudo -H pip install requests
   - sudo -H apt-get -qq install xvfb python-virtualenv chromium-browser
