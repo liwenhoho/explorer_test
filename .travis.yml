@@ -11,7 +11,7 @@ env:
   global:
     #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
     - IS_UPLOAD=true
-    - PIP_PATH=/usr/local/lib/python2.7/site-packages/
+    - PIP_PATH=/usr/lib/python2.7/site-packages/
 
 before_install:
   - export PYTHONPATH=/home/travis/build/palletone/explorer_test/PalletoneExplorer:/usr/bin:/usr/lib/python2.7/:/usr/local/lib/python2.7/
@@ -44,7 +44,7 @@ script:
   - echo $PATH
   - echo $PYTHONPATH
   - ls -l /usr/local/lib/python2.7/dist-packages
-  - find / -name "*sysconfigdata_nd.py"
+  - sudo -H find / -name "*sysconfigdata_nd.py"
   - sudo ln -s /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.py /usr/lib/python2.7/
   - python PalletoneExplorer/more/viewSettings/viewSettings.py
 #env:
