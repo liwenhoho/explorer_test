@@ -14,13 +14,13 @@ env:
     - PIP_PATH=/usr/lib/python2.7/site-packages/
 
 before_install:
-  - export PYTHONPATH=/home/travis/build/palletone/explorer_test/PalletoneExplorer:/usr/bin:/usr/lib/python2.7/:/usr/local/lib/python2.7/:/usr/bin/python2.7-config:/usr/bin/python2.7:/usr/bin/python2:/etc/python2.7:/usr/local/lib/python2.7:/usr/include/python2.7:/home/travis/virtualenv/python2.7.15/bin/python2.7:/home/travis/virtualenv/python2.7.15/bin/python2:/opt/pyenv/shims/python2.7-config:/opt/pyenv/shims/python2.7:/opt/pyenv/shims/python2:/usr/share/man/man1/python2.1.gz
+  - export PYTHONPATH=/home/travis/build/palletone/explorer_test/PalletoneExplorer:/usr/lib/python2.7/:/usr/local/lib/python2.7/:/usr/bin/python2.7-config:/usr/bin/python2.7:/usr/bin/python2:/etc/python2.7:/usr/local/lib/python2.7:/usr/include/python2.7:/home/travis/virtualenv/python2.7.15/bin/python2.7:/home/travis/virtualenv/python2.7.15/bin/python2:/opt/pyenv/shims/python2.7-config:/opt/pyenv/shims/python2.7
   - whereis python2.7
   - ls -l /usr/lib/python2.7/dist-packages
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H pip install --upgrade pip
-  - sudo -H pip install selenium
-  - python -m pip install -U selenium
+  - sudo -H pip install --target=${PIP_PATH} selenium
+  #- python -m pip install -U selenium
   - sudo -H pip install --target=${PIP_PATH} unittest2
   - sudo -H pip install --target=${PIP_PATH} requests
   - sudo -H apt-get -qq install xvfb python-virtualenv 
