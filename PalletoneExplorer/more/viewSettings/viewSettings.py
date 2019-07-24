@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from utilFunc.utilFunc import utilFunc
 from Config import Config
-import HTMLTestRunner_cn
+from report_template import HTMLTestRunner_cn
 import time
 import os
 import sys

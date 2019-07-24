@@ -1,41 +1,48 @@
 language: python
 dist: xenial
+sudo: required
+addons:
+  chrome: stable
 python:
   - "2.7"
 env: explorer
-sudo: required
-
-cache:
-  pip: true
-  directories:
-    - $HOME/buildout-cache
+  global:
+    #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
+    - IS_UPLOAD=true
 
 before_install:
   - sudo -H pip install selenium
+  - sudo -H pip install unittest
   - sudo -H pip install --upgrade pip
   - sudo -H pip install requests
   - sudo -H apt-get -qq install xvfb python-virtualenv chromium-browser
   - wget http://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip
   - sudo -H apt-get install unzip
   - sudo -H unzip chromedriver_linux64.zip 
+  - pwd
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
   - export CHROME_HOME=chromium-browser
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
+  - export PYTHONPATH=$PYTHONPATH:/home/travis/palletone/explorer_test/PalletoneExplorer/
+  - sudo -H apt-get install Xvfb
+  - Xvfb -ac :7 -screen 0 1280x1024x8 > /dev/null 2>&1
+  - export DISPLAY=:7
   - sleep 3
 
 install:
   - sudo -H apt-get install lftp
-  - chmod +x bdd/upload2Ftp.sh
-#before_script:
+  - chmod +x upload2Ftp.sh
 
 script:    
   - python PalletoneExplorer/more/viewSettings/viewSettings.py
-env:
-  - BROWSER="Chrome"
+#env:
+  #- BROWSER="Chrome"
   #- BROWSER="Firefox"
 
+after_script:
+  - |
+    if [ $IS_UPLOAD == 'true' ]; then
+      ./bdd/upload2Ftp.sh ${FTP_PWD} ${TRAVIS_BRANCH};
         
 addons:
   apt:
