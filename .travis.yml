@@ -7,7 +7,7 @@ addons:
   chrome: stable
   apt:
     update: true
-env:
+env: headless_format
   global:
     #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
     - IS_UPLOAD=true
