@@ -19,7 +19,7 @@ before_install:
   - ls -l /usr/lib/python2.7/dist-packages
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H pip install --upgrade pip
-  - sudo -H pip show selenium
+  - pip show selenium
   - sudo -H pip install --target=${PIP_PATH} selenium==3.14.1
   #- python -m pip install -U selenium
   - sudo -H pip install --target=${PIP_PATH} unittest2
