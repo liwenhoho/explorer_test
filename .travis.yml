@@ -30,6 +30,7 @@ before_install:
   - pwd
   - sudo -H chmod a+x chromedriver
   - sudo mv chromedriver /usr/bin/
+  - ls -l /usr/bin/chromedriver
   #- export CHROME_HOME=chromium-browser
   - Xvfb -ac :7 -screen 0 1366x768x8 &
   #- export DISPLAY=:7
@@ -53,8 +54,8 @@ script:
   #- BROWSER="Firefox"
 
 after_script:
+  - sudo -H mv /PalletoneExplorer/Report/TestResult*.html /PalletoneExplorer/Report/TestResult.html
   - zip -j ./PalletoneExplorer/Report/TestResult.zip ./PalletoneExplorer/Report/*
-  - sudo -H mv /PalletoneExplorer/Report/TestResult_*.html /PalletoneExplorer/Report/TestResult.html
   - |
     if [ $IS_UPLOAD == 'true' ]; then
       ./PalletoneExplorer/upload2Ftp.sh ${FTP_PWD} bdd;
