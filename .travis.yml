@@ -37,7 +37,7 @@ before_install:
   - sleep 3
 
 install:
-  - sudo -H apt-get install lftp
+  - sudo -H apt-get install expect lftp
   - chmod +x PalletoneExplorer/upload2Ftp.sh
 
 script:
