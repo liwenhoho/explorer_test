@@ -32,7 +32,7 @@ before_install:
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
   #- export CHROME_HOME=chromium-browser
-  - Xvfb -ac :7 -screen 0 1366x768x8 &
+  - Xvfb -ac :7 -screen 0 1366x768x24 &
   #- export DISPLAY=:7
   - sleep 3
 
@@ -46,7 +46,9 @@ script:
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H find / -name "*sysconfigdata_nd.py"
   - sudo ln -s /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.py /usr/lib/python2.7/
-  - python PalletoneExplorer/more/viewSettings/viewSettings.py
+  - sudo -H find / -name "*selenium.py"
+  - ls -l /usr/lib/python2.7/dist-packages
+  #- python PalletoneExplorer/more/viewSettings/viewSettings.py
 #env:
   #- BROWSER="Chrome"
   #- BROWSER="Firefox"
