@@ -1,12 +1,12 @@
 language: python
+python:
+  - "2.7"
 dist: xenial
 sudo: required
 addons:
   chrome: stable
   apt:
     update: true
-python:
-  - "2.7"
 env:
   global:
     #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
@@ -19,7 +19,8 @@ before_install:
   - ls -l /usr/lib/python2.7/dist-packages
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H pip install --upgrade pip
-  - sudo -H pip install --target=${PIP_PATH} selenium
+  - sudo -H pip show selenium
+  - sudo -H pip install --target=${PIP_PATH} selenium==3.14.1
   #- python -m pip install -U selenium
   - sudo -H pip install --target=${PIP_PATH} unittest2
   - sudo -H pip install --target=${PIP_PATH} requests
@@ -47,6 +48,7 @@ script:
   - sudo -H find / -name "*sysconfigdata_nd.py"
   - sudo ln -s /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.py /usr/lib/python2.7/
   - sudo -H find / -name "*selenium.py"
+
   - ls -l /usr/lib/python2.7/dist-packages
   #- python PalletoneExplorer/more/viewSettings/viewSettings.py
 #env:
