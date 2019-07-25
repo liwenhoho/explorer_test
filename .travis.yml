@@ -11,18 +11,17 @@ env:
   global:
     #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
     - IS_UPLOAD=true
-    - PIP_PATH=/usr/lib/python2.7/site-packages/
+    - PIP_PATH=/usr/lib/python2.7/dist-packages
 
 before_install:
   - export PYTHONPATH=/home/travis/build/palletone/explorer_test/PalletoneExplorer:/usr/lib/python2.7/:/usr/local/lib/python2.7/:/usr/bin/python2.7-config:/usr/bin/python2.7:/usr/bin/python2:/etc/python2.7:/usr/local/lib/python2.7:/usr/include/python2.7:/home/travis/virtualenv/python2.7.15/bin/python2.7:/home/travis/virtualenv/python2.7.15/bin/python2:/opt/pyenv/shims/python2.7-config:/opt/pyenv/shims/python2.7
   - whereis python2.7
-  - ls -l /usr/lib/python2.7/dist-packages
+  - ls -l ${PIP_PATH}
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H pip install --upgrade pip
-  #- pip show selenium
-  - sudo -H pip install --target=/usr/lib/python2.7/site-packages/ selenium==3.14.1
+  - sudo -H pip install --target=${PIP_PATH} selenium==3.14.1
   #- python -m pip install -U selenium
-  - sudo -H pip install --target=/usr/lib/python2.7/site-packages/ unittest2
+  - sudo -H pip install --target=${PIP_PATH} unittest2
   - sudo -H pip install --target=${PIP_PATH} requests
   - sudo -H apt-get -qq install xvfb python-virtualenv 
   #chromium-browser
@@ -47,10 +46,10 @@ script:
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H find / -name "*sysconfigdata_nd.py"
   - sudo ln -s /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.py /usr/lib/python2.7/
-  - sudo -H find / -name "*selenium.py"
+  - sudo -H find / -name "webdriver.py"
 
-  - ls -l /usr/lib/python2.7/dist-packages
-  #- python PalletoneExplorer/more/viewSettings/viewSettings.py
+  - ls -l ${PIP_PATH}
+  - python PalletoneExplorer/more/viewSettings/viewSettings.py
 #env:
   #- BROWSER="Chrome"
   #- BROWSER="Firefox"
