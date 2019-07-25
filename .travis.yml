@@ -57,5 +57,5 @@ after_script:
   - zip -j ./PalletoneExplorer/Report/TestResult.zip ./PalletoneExplorer/Report/*
   - |
     if [ $IS_UPLOAD == 'true' ]; then
-      ./PalletoneExplorer/upload2Ftp.sh ${FTP_PWD} ${TRAVIS_BRANCH};
+      ./PalletoneExplorer/upload2Ftp.sh ${FTP_PWD} bdd;
     fi
