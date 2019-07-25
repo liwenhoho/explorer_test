@@ -66,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
               <folding>
                 <element signature="e#20#35#0" expanded="true" />
               </folding>
@@ -283,7 +283,7 @@
       <workItem from="1563328528020" duration="9063000" />
       <workItem from="1563346996580" duration="18308000" />
       <workItem from="1563775165903" duration="4259000" />
-      <workItem from="1563852349149" duration="14576000" />
+      <workItem from="1563852349149" duration="14680000" />
     </task>
     <task id="LOCAL-00001" summary="Explorer">
       <created>1562062719057</created>
@@ -328,7 +328,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110974000" />
+    <option name="totallyTimeSpent" value="111078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -525,7 +525,7 @@
     <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
           <folding>
             <element signature="e#20#35#0" expanded="true" />
           </folding>
