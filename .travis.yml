@@ -29,7 +29,7 @@ before_install:
   - sudo -H apt-get install unzip
   - sudo -H unzip chromedriver_linux64.zip
   - pwd
-  - sudo chmod u+x chromedriver
+  - chmod a+x chromedriver
   - sudo mv chromedriver /usr/bin/
   #- export CHROME_HOME=chromium-browser
   - Xvfb -ac :7 -screen 0 1366x768x8 &
@@ -55,6 +55,7 @@ script:
 
 after_script:
   - zip -j ./PalletoneExplorer/Report/TestResult.zip ./PalletoneExplorer/Report/*
+  - sudo -H mv /PalletoneExplorer/Report/TestResult_*.html /PalletoneExplorer/Report/TestResult.html
   - |
     if [ $IS_UPLOAD == 'true' ]; then
       ./PalletoneExplorer/upload2Ftp.sh ${FTP_PWD} bdd;
