@@ -11,27 +11,26 @@ env:
   global:
     #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
     - IS_UPLOAD=true
-    - PIP_PATH=/usr/lib/python2.7/dist-packages
+    - PIP_PACKAGE_PATH=/usr/lib/python2.7/dist-packages
 
 before_install:
   - export PYTHONPATH=/home/travis/build/palletone/explorer_test/PalletoneExplorer:/usr/lib/python2.7/:/usr/local/lib/python2.7/:/usr/bin/python2.7-config:/usr/bin/python2.7:/usr/bin/python2:/etc/python2.7:/usr/local/lib/python2.7:/usr/include/python2.7:/home/travis/virtualenv/python2.7.15/bin/python2.7:/home/travis/virtualenv/python2.7.15/bin/python2:/opt/pyenv/shims/python2.7-config:/opt/pyenv/shims/python2.7
   - whereis python2.7
-  - ls -l ${PIP_PATH}
+  - ls -l ${PIP_PACKAGE_PATH}
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H pip install --upgrade pip
-  - sudo -H pip install --target=${PIP_PATH} selenium==3.14.1
+  - sudo -H pip install --target=${PIP_PACKAGE_PATH} selenium==3.14.1
   #- python -m pip install -U selenium
-  - sudo -H pip install --target=${PIP_PATH} unittest2
-  - sudo -H pip install --target=${PIP_PATH} requests
-  - sudo -H apt-get -qq install xvfb python-virtualenv 
-  #chromium-browser
+  - sudo -H pip install --target=${PIP_PACKAGE_PATH} unittest2
+  - sudo -H pip install --target=${PIP_PACKAGE_PATH} requests
+  - sudo -H apt-get -qq install xvfb python-virtualenv chromium-browser
   - wget http://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip
   - sudo -H apt-get install unzip
   - sudo -H unzip chromedriver_linux64.zip 
   - pwd
   - sudo chmod u+x chromedriver
   - sudo mv chromedriver /usr/bin/
-  #- export CHROME_HOME=chromium-browser
+  - export CHROME_HOME=chromium-browser
   - Xvfb -ac :7 -screen 0 1366x768x24 &
   #- export DISPLAY=:7
   - sleep 3
@@ -47,9 +46,9 @@ script:
   - sudo -H find / -name "*sysconfigdata_nd.py"
   - sudo ln -s /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.py /usr/lib/python2.7/
   - sudo -H find / -name "webdriver.py"
-
-  - ls -l ${PIP_PATH}
-  - python PalletoneExplorer/more/viewSettings/viewSettings.py
+  - ls -l ${PIP_PACKAGE_PATH}
+  #- python PalletoneExplorer/more/viewSettings/viewSettings.py
+  - python PalletoneExplorer/print_syspath.py
 #env:
   #- BROWSER="Chrome"
   #- BROWSER="Firefox"
