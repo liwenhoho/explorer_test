@@ -33,7 +33,7 @@ before_install:
   - ls -l /usr/bin/chromedriver
   #- export CHROME_HOME=chromium-browser
   - Xvfb -ac :7 -screen 0 1366x768x8 &
-  - export DISPLAY=:7
+  #- export DISPLAY=:7
   - sleep 3
 
 install:

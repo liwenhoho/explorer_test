@@ -20,7 +20,12 @@ sys.path.append(libPath)
 
 class viewSettings(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        option = webdriver.ChromeOptions()
+        option.add_argument('headless')
+        option.add_argument('no-sandbox')
+        #option.add_argument('disable-dev-shm-usage')
+        self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=option)
+        #self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
         self.url = "http://123.126.106.84:8080/"
         #self.url = "http://123.57.60.155:8545"
