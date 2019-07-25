@@ -7,7 +7,7 @@ spawn lftp travis:$ftppwd@47.74.209.46
 expect "lftp"
 send "cd ${folder}\n"
 expect "cd"
-send "mirror -R /home/travis/gopath/src/github.com/palletone/go-palletone/bdd/logs\n"  
+send "mirror -R /home/travis/build/palletone/explorer_test/PalletoneExplorer/Report\n"  
 expect "transferred"
 send "exit\n"
 interact
