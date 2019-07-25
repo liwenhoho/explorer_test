@@ -19,10 +19,10 @@ before_install:
   - ls -l /usr/lib/python2.7/dist-packages
   - ls -l /usr/local/lib/python2.7/dist-packages
   - sudo -H pip install --upgrade pip
-  - pip show selenium
-  - sudo -H pip install --target=${PIP_PATH} selenium==3.14.1
+  #- pip show selenium
+  - sudo -H pip install --target=/usr/lib/python2.7/site-packages/ selenium==3.14.1
   #- python -m pip install -U selenium
-  - sudo -H pip install --target=${PIP_PATH} unittest2
+  - sudo -H pip install --target=/usr/lib/python2.7/site-packages/ unittest2
   - sudo -H pip install --target=${PIP_PATH} requests
   - sudo -H apt-get -qq install xvfb python-virtualenv 
   #chromium-browser
