@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb620538-b9dd-43a4-8491-2326d7c0d73e" name="Default Changelist" comment="" />
+    <list default="true" id="cb620538-b9dd-43a4-8491-2326d7c0d73e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/more/viewSettings/viewSettings.py" beforeDir="false" afterPath="$PROJECT_DIR$/more/viewSettings/viewSettings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/print_syspath.py" beforeDir="false" afterPath="$PROJECT_DIR$/print_syspath.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +18,7 @@
     <SUITE FILE_PATH="coverage/PalletoneExplorer$singlePage.coverage" NAME="singlePage Coverage Results" MODIFIED="1563776300932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/more/viewSettings" />
     <SUITE FILE_PATH="coverage/PalletoneExplorer$BasePage.coverage" NAME="BasePage Coverage Results" MODIFIED="1562060062660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/more/viewSettings" />
     <SUITE FILE_PATH="coverage/PalletoneExplorer$Unittests_for_singlePage_singlePage.coverage" NAME="Unittests for singlePage.singlePage Coverage Results" MODIFIED="1562061280472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/more/viewSettings" />
-    <SUITE FILE_PATH="coverage/PalletoneExplorer$Unittests_in_viewSettings_py.coverage" NAME="Unittests in viewSettings.py Coverage Results" MODIFIED="1563863411052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/more/viewSettings" />
+    <SUITE FILE_PATH="coverage/PalletoneExplorer$Unittests_in_viewSettings_py.coverage" NAME="Unittests in viewSettings.py Coverage Results" MODIFIED="1564038741645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/more/viewSettings" />
     <SUITE FILE_PATH="coverage/PalletoneExplorer$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1562053919981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/more" />
     <SUITE FILE_PATH="coverage/PalletoneExplorer$Nosetests_in_singlePage_py.coverage" NAME="Nosetests in singlePage.py Coverage Results" MODIFIED="1563344130079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/more/viewSettings" />
     <SUITE FILE_PATH="coverage/PalletoneExplorer$Unittests_for_singlePage_singlePage_test_login_mail.coverage" NAME="Unittests for singlePage.singlePage.test_login_mail Coverage Results" MODIFIED="1562061028764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/more/viewSettings" />
@@ -63,8 +67,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            <state relative-caret-position="132">
+              <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
+              <folding>
+                <element signature="e#20#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -278,7 +285,7 @@
       <workItem from="1563328528020" duration="9063000" />
       <workItem from="1563346996580" duration="18308000" />
       <workItem from="1563775165903" duration="4259000" />
-      <workItem from="1563852349149" duration="13191000" />
+      <workItem from="1563852349149" duration="13909000" />
     </task>
     <task id="LOCAL-00001" summary="Explorer">
       <created>1562062719057</created>
@@ -291,15 +298,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_viewSettings_py - 2019.07.22 at 14h 15m 56s.xml">
-      <configuration name="Unittests in viewSettings.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_viewSettings_py - 2019.07.22 at 14h 27m 58s.xml">
-      <configuration name="Unittests in viewSettings.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_viewSettings_py - 2019.07.22 at 14h 37m 30s.xml">
-      <configuration name="Unittests in viewSettings.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_viewSettings_py - 2019.07.22 at 14h 38m 07s.xml">
       <configuration name="Unittests in viewSettings.py" configurationId="tests" />
     </history-entry>
@@ -321,20 +319,29 @@
     <history-entry file="Unittests_in_viewSettings_py - 2019.07.23 at 14h 30m 35s.xml">
       <configuration name="Unittests in viewSettings.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_viewSettings_py - 2019.07.25 at 15h 09m 39s.xml">
+      <configuration name="Unittests in viewSettings.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_viewSettings_py - 2019.07.25 at 15h 11m 43s.xml">
+      <configuration name="Unittests in viewSettings.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_viewSettings_py - 2019.07.25 at 15h 12m 35s.xml">
+      <configuration name="Unittests in viewSettings.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109589000" />
+    <option name="totallyTimeSpent" value="110307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3290469" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984917" visible="true" weight="0.39016393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4984917" visible="true" weight="0.39016393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -519,8 +526,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/more/viewSettings/viewSettings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        <state relative-caret-position="132">
+          <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
+          <folding>
+            <element signature="e#20#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

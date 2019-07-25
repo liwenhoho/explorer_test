@@ -80,7 +80,7 @@ if __name__ == "__main__":
     now = time.strftime('%Y-%m-%d%H%M%S')
     print("test getcwd")
     print(os.getcwd())
-    filename = open(os.getcwd() + '/TestResult_' + now + '.html', 'wb')
+    filename = open(os.getcwd()+'/PalletoneExplorer/Report/TestResult_' + now + '.html', 'wb')
     runner = HTMLTestRunner_cn.HTMLTestRunner(stream=filename,title=u'PalletExplorer测试报告',description =u'测试报告')
     runner.run(suite)
     print("test stop")
