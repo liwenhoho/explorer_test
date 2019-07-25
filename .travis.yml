@@ -54,7 +54,7 @@ script:
   #- BROWSER="Firefox"
 
 after_script:
-  - sudo -H mv /PalletoneExplorer/Report/TestResult*.html /PalletoneExplorer/Report/TestResult.html
+  #- sudo -H mv /PalletoneExplorer/Report/TestResult*.html /PalletoneExplorer/Report/TestResult.html
   - zip -j ./PalletoneExplorer/Report/TestResult.zip ./PalletoneExplorer/Report/*
   - |
     if [ $IS_UPLOAD == 'true' ]; then
