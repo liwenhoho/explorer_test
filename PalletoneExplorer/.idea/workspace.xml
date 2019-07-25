@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb620538-b9dd-43a4-8491-2326d7c0d73e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/more/viewSettings/viewSettings.py" beforeDir="false" afterPath="$PROJECT_DIR$/more/viewSettings/viewSettings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/print_syspath.py" beforeDir="false" afterPath="$PROJECT_DIR$/print_syspath.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +109,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="183" />
     <option name="y" value="-15" />
     <option name="width" value="989" />
@@ -333,7 +331,7 @@
     <option name="totallyTimeSpent" value="110936000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

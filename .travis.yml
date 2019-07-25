@@ -7,7 +7,7 @@ addons:
   chrome: stable
   apt:
     update: true
-env: headless_format
+env:
   global:
     #- BASE_DIR=/home/travis/palletone/go-palletone/explorer_test/PalletoneExplorer/
     - IS_UPLOAD=true
@@ -25,7 +25,7 @@ before_install:
   - sudo -H pip install --target=${PIP_PACKAGE_PATH} requests
   - sudo -H apt-get -qq install xvfb
   #chromium-browser
-  - wget http://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip
+  - wget http://chromedriver.storage.googleapis.com/75.0.3770.8/chromedriver_linux64.zip
   - sudo -H apt-get install unzip
   - sudo -H unzip chromedriver_linux64.zip
   - pwd
