@@ -56,9 +56,9 @@ script:
 
 after_script:
   #- sudo -H mv /PalletoneExplorer/Report/TestResult*.html /PalletoneExplorer/Report/TestResult.html
-  - zip -j ./PalletoneExplorer/Report/TestResult.zip ./PalletoneExplorer/Report/*
-  - sudo rm /PalletoneExplorer/Report/*.html
+  - zip -j ./Report/TestResult.zip ./Report/*
+  - sudo rm /Report/*.html
   - |
     if [ $IS_UPLOAD == 'true' ]; then
-      ./PalletoneExplorer/upload2Ftp.sh ${FTP_PWD} bdd;
+      ./upload2Ftp.sh ${FTP_PWD} bdd;
     fi
