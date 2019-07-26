@@ -47,8 +47,9 @@ script:
   - sudo ln -s /usr/lib/python2.7/plat-x86_64-linux-gnu/_sysconfigdata_nd.py /usr/lib/python2.7/
   - ls -l ${PIP_PACKAGE_PATH}
   - mkdir -p PalletoneExplorer/Report
-  - python PalletoneExplorer/print_syspath.py
-  - python PalletoneExplorer/more/viewSettings/viewSettings.py
+  - cd PalletoneExplorer
+  - python print_syspath.py
+  - python more/viewSettings/viewSettings.py
 #env:
   #- BROWSER="Chrome"
   #- BROWSER="Firefox"
