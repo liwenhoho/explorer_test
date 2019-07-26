@@ -20,13 +20,13 @@ sys.path.append(libPath)
 
 class viewSettings(unittest.TestCase):
     def setUp(self):
-        option = webdriver.ChromeOptions()
-        option.add_argument('headless')
-        option.add_argument('no-sandbox')
+        #option = webdriver.ChromeOptions()
+        #option.add_argument('headless')
+        #option.add_argument('no-sandbox')
         #option.add_argument('--disable-gpu')
         #option.add_argument('disable-dev-shm-usage')
-        self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=option)
-        #self.driver = webdriver.Chrome()
+        #self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=option)
+        self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
         self.url = "http://123.126.106.84:8080/"
         #self.url = "http://123.57.60.155:8545"
@@ -78,15 +78,15 @@ class viewSettings(unittest.TestCase):
 
 if __name__ == "__main__":
 #if __name__ == "viewSettings":
-    #current_time = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
+    current_time = time.strftime("%Y-%m-%d", time.localtime(time.time()))
     #suite = unittest.TestLoader().discover("viewSettings")
     print("Test start")
     suite = unittest.TestSuite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(viewSettings))
-    now = time.strftime('%Y-%m-%d%H%M%S')
+    #now = time.strftime('%Y-%m-%d')
     print("test getcwd")
     print(os.getcwd())
-    filename = open(os.getcwd()+'/PalletoneExplorer/Report/TestResult_' + now + '.html', 'wb')
+    filename = open(os.getcwd()+'/Report/TestResult_' + current_time + '.html', 'wb')
     runner = HTMLTestRunner_cn.HTMLTestRunner(stream=filename,title=u'PalletExplorer测试报告',description =u'测试报告')
     runner.run(suite)
     print("test stop")
