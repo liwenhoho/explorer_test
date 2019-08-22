@@ -1,0 +1,70 @@
+senario:
+  - id: Android_001
+    title: issue_token
+    condition: ~
+testcase:
+  token_list:
+    - element_location: com.hande.wanchain.wallet:id/main_bottom_text_2
+      location_type: id
+      operation_type: click
+    - element_location: //android.widget.TextView[contains(@text, '发行Token')]
+      location_type: text
+      operation_type: click
+      text: 发行Token
+    - element_location: com.hande.wanchain.wallet:id/token_publish_re_1
+      location_type: id
+      operation_type: click
+    - element_location: com.hande.wanchain.wallet:id/token_publish_re_2
+      location_type: id
+      operation_type: click
+    - element_location: com.hande.wanchain.wallet:id/token_publish_re_3
+      location_type: id
+      operation_type: click
+    - element_location: com.hande.wanchain.wallet:id/token_publish_re_4
+      location_type: id
+      operation_type: click
+    - element_location: com.hande.wanchain.wallet:id/token_publish_re_5
+      location_type: id
+      operation_type: click
+  issue_prc20:
+    - element_location: com.hande.wanchain.wallet:id/publish_prc20_on_symbol
+      location_type: id
+      operation_type: send_keys
+      text: &sybol BA040
+    - element_location: com.hande.wanchain.wallet:id/publish_prc20_on_decimal
+      location_type: id
+      operation_type: send_keys
+      text: 2
+    - element_location: com.hande.wanchain.wallet:id/publish_prc20_on__total_supply
+      location_type: id
+      operation_type: send_keys
+      text: 30000
+    - element_location: com.hande.wanchain.wallet:id/publish_prc20_on__address
+      location_type: id
+      operation_type: send_keys
+      text: ~
+    - element_location: com.hande.wanchain.wallet:id/send_coin_scan
+      location_type: id
+      operation_type: send_keys
+    - element_location: com.hande.wanchain.wallet:id/publish_prc20_on__name
+      location_type: id
+      operation_type: send_keys
+      text: *sybol
+    - element_location: com.hande.wanchain.wallet:id/send_coin_reduce
+      location_type: id
+      operation_type: click
+    - element_location: com.hande.wanchain.wallet:id/send_coin_best_fee
+      location_type: id
+      operation_type: send_keys
+    - element_location: com.hande.wanchain.wallet:id/send_coin_add
+      location_type: id
+      operation_type: click
+    - element_location: com.hande.wanchain.wallet:id/publish_prc20_on_submit
+      location_type: id
+      operation_type: click
+
+assert:
+  - element_location: com.hande.wanchain.wallet:id/password_confirm
+    location_type: id
+  - element_location: com.jianshu.haruki:id/tab_more
+    location_type: id

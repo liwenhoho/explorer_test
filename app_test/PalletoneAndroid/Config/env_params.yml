@@ -1,0 +1,17 @@
+system:
+  - name: Windows
+    package_path: D:/Android/apktools/app-stg1-debug.apk
+  - name: Linux
+    package_path: /path/to/app-stg1-debug.apk
+  - name: Os x
+    package_path: /path/to/app-stg1-debug
+devices:
+  - deviceName: 192.168.0.193:5555
+    platformName: Android
+    platformVersion: 6.0.1
+    automationName: UiAutomator2
+    uiautomator2ServerLaunchTimeout: 20000
+    appPackage: com.hande.wanchain.wallet
+    appActivity: .activity.FlashActivity
+defaultHub: http://127.0.0.1:4723/wd/hub
+-deviceName: c6e1fc57

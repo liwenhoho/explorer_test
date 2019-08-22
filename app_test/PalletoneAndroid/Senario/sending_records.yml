@@ -1,0 +1,28 @@
+senario:
+  - id: Android_005
+    title: sending_records
+    condition: ~
+testcase:
+  - element_location: com.hande.wanchain.wallet:id/main_bottom_text_3
+    location_type: id
+    operation_type: click
+  - element_location: //[@id='com.hande.wanchain.wallet:id/main_transaction_records']/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[1]/[@id='com.hande.wanchain.wallet:id/item_tx_record_img']
+    location_type: xpath
+    operation_type: click
+  - element_location: //[@id='com.hande.wanchain.wallet:id/main_transaction_records']/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[1]/[@id='com.hande.wanchain.wallet:id/item_tx_record_name']
+    location_type: xpath
+    operation_type: send_keys
+    text:
+  - element_location: //[@id='com.hande.wanchain.wallet:id/main_transaction_records']/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/[@id='com.hande.wanchain.wallet:id/item_tx_record_amount']
+    location_type: xpath
+    operation_type: send_keys
+    text:
+  - element_location: //[@id='com.hande.wanchain.wallet:id/main_transaction_records']/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/[@id='com.hande.wanchain.wallet:id/item_tx_record_symbol']
+    location_type: xpath
+    operation_type: send_keys
+    text:
+assert:
+  - element_location: com.hande.wanchain.wallet:id/password_confirm
+    location_type: id
+  - element_location: com.jianshu.haruki:id/tab_more
+    location_type: id

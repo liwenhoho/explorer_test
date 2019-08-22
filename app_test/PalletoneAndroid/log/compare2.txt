@@ -1,0 +1,78 @@
+08-22 15:57:28.512 14255 14274 V RenderScript: 0xd11af000 Launching thread(s), CPUs 8
+08-22 15:57:30.517 14255 14255 I http    : ===>>>{"bdata":"{\"address\":\"P1AuNMS3dSa4vQMpuGPvTjsFSkbKneWRNwC\",\"coinSymbol\":\"PTN\",\"walletCode\":\"a125d767e55e1165\"}","clientType":"1","locale":"zh","sign":"f0a6858ef8242e6795b150a8b49301e934a68d77dfbc89e4316b07b06d653729","version":"1.0.0"}
+08-22 15:57:30.520 14255 14255 I yrh     : 424638b165db34f066cb2d0d86131866
+08-22 15:57:30.547 14255 15654 I http    : request--url-->>http://139.9.3.2:8001/managerPTN/getBalance
+08-22 15:57:30.547 14255 15654 I http    : request--method-->>POST
+08-22 15:57:30.685 14255 15655 W Bitmap  : Called reconfigure on a bitmap that is in use! This may cause graphical corruption!
+08-22 15:57:30.747 14255 15654 I http    : response time-->>199.848959
+08-22 15:57:30.747 14255 15654 I http    : response data-->>>{"code":"0","message":null,"data":{"balance":233690,"unitRate":100000000,"bestFee":100000000,"utxos":[{"txid":"0x7482c7b559daf001b5d7df0b3b90f37852f243a87fe16ef473ebb2723296cf88","messageIndex":0,"vout":0,"asset":"PTN","scriptPubKey":"0x76a9146ca09607278f30916e0c586e65c3382ae85610b588ac","createTime":"2019-08-22T15:42:54+08:00","amount":23369000000000},{"txid":"0x77154278a64bc30f59ec64f5b6ad05f170a73668dc9ff218856bb393bc82b820","messageIndex":3,"vout":0,"asset":"AA001+2011Q8HEGYAAJSDS1LS6","scriptPubKey":"0x76a9146ca09607278f30916e0c586e65c3382ae85610b588ac","createTime":"2019-08-22T14:57:24+08:00","amount":34000},{"txid":"0x39c28735a2556d501f912cf3d149b0f59264f8cd1c019c0756e36ff060d3de5c","messageIndex":3,"vout":0,"asset":"AA001+2011Q8HEGYAAJSDS1LS6","scriptPubKey":"0x76a9146ca09607278f30916e0c586e65c3382ae85610b588ac","createTime":"2019-08-22T10:58:39+08:00","amount":45000},{"txid":"0x743ba46c2839a9ac3a2c4c9a1754d385892e7fc3190f6eaba12fd33badfb736b","messageIndex":1,"vout":1,"asset":"AA001+2011Q8HEGYAAJSDS1LS6","scriptPubKey":"0x76a9146ca09607278f30916e0c586e65c3382ae85610b588ac","createTime":"2019-08-22T11:03:00+08:00","amount":20000}]}}
+08-22 15:57:30.765 14255 14255 I http    : ²âÊÔÊý¾Ý£º{"nonce":0,"balance":"233690","coinSymbol":"PTN","bestFee":"100000000","qrType":"UPDATE_BALANCE_N2H","gasLimit":0,"utxos":"[{\"amount\":\"23369000000000\",\"asset\":\"PTN\",\"confirmations\":0,\"messageIndex\":0,\"safe\":false,\"scriptPubKey\":\"0x76a9146ca09607278f30916e0c586e65c3382ae85610b588ac\",\"solvable\":false,\"spendable\":false,\"txid\":\"0x7482c7b559daf001b5d7df0b3b90f37852f243a87fe16ef473ebb2723296cf88\",\"vout\":0},{\"amount\":\"34000\",\"asset\":\"AA001+2011Q8HEGYAAJSDS1LS6\",\"confirmations\":0,\"messageIndex\":3,\"safe\":false,\"scriptPubKey\":\"0x76a9146ca09607278f30916e0c586e65c3382ae85610b588ac\",\"solvable\":false,\"spendable\":false,\"txid\":\"0x77154278a64bc30f59ec64f5b6ad05f170a73668dc9ff218856bb393bc82b820\",\"vout\":0},{\"amount\":\"45000\",\"asset\":\"AA001+2011Q8HEGYAAJSDS1LS6\",\"confirmations\":0,\"messageIndex\":3,\"safe\":false,\"scriptPubKey\":\"0x76a9146ca09607278f30916e0c586e65c3382ae85610b588ac\",\"solvable\":false,\"spendable\":false,\"txid\":\"0x39c28735a2556d501f912cf3d149b0f59264f8cd1c019c0756e36ff060d3de5c\",\"vout\":0},{\"amount\":\"20000\",\"asset\":\"AA001+2011Q8HEGYAAJSDS1LS6\",\"confirmations\":0,\"messageIndex\":1,\"safe\":false,\"scriptPubKey\":\"0x76a9146ca09607278f30916e0c586e65c3382ae85610b588ac\",\"solvable\":false,\"spendable\":false,\"txid\":\"0x743ba46c2839a9ac3a2c4c9a1754d385892e7fc3190f6eaba12fd33badfb736b\",\"vout\":1}]","unitRate":100000000,"ref_block_prefix":0,"ref_block_num":0}
+08-22 15:57:30.769 14255 14255 I yrh     : CurrencyProperty{cId=3, cIcon='R.mipmap.icon_ptn', cName='PalletOneToken', cNameEn='PTN', cAmount='23369100000000', cUnit='PTN', symbol='PTN', bestFee='100000000', coinType=2152748110, isChecked=false, selected=true, actived=true, erc20MinUnit='null', erc20CoinType='null', erc20Contract='null', erc20UnitRate=0.0}
+08-22 15:57:31.401 14255 14255 I nubialog:  finished message:{ delay=649ms dispatching=-649ms sending=-650ms callback=io.reactivex.android.schedulers.HandlerScheduler$ScheduledRunnable obj=io.reactivex.android.schedulers.HandlerScheduler$HandlerWorker target=android.os.Handler }
+08-22 15:57:31.401 14255 14255 I Choreographer: Skipped 38 frames!  The application may be doing too much work on its main thread.
+08-22 15:57:31.409 14255 14255 I yrh     : com.hande.wanchain.wallet            Ìí¼ÓActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.TokenPublishActivity}
+08-22 15:57:34.281 14255 14255 I yrh     : com.hande.wanchain.wallet            Ìí¼ÓActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.center.PublishPrc20AddActivity}
+08-22 16:00:32.408 14255 14255 I yrh     : com.hande.wanchain.wallet            ÒÆ³ýActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.center.PublishPrc20AddActivity}
+08-22 16:00:33.801 14255 14255 I yrh     : com.hande.wanchain.wallet            Ìí¼ÓActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.center.PublishPrc20AddActivity}
+08-22 16:00:57.247 14255 14255 I http    : ===>>>{"bdata":"{\"from\":\"P1AuNMS3dSa4vQMpuGPvTjsFSkbKneWRNwC\",\"coinSymbol\":\"PTN\",\"txData\":\"f9011bf90116f8e280b8dff8ddf892f890b86a47304402207ebc85c51a23a3c4822c36f22446ed382ac36057fd661c1652e312cbc503db390220269287b4962d68b00d4c29cb1dc7fdfea99f6126f2b35d6fcf11ed155705a26d81210200e7dd3f562653eeb2ca5a65f373bed84f3d6a26f7f53b4087556cca7693b7e080a07482c7b559daf001b5d7df0b3b90f37852f243a87fe16ef473ebb2723296cf888080f846f844861540fefbb9009976a9146ca09607278f30916e0c586e65c3382ae85610b588ace290400082bb080000000000000000000000900000000000000000000000000000000080f166afee940000000000000000000000000000000000000002d78b737570706c79546f6b656e8541413030318437323030808080\",\"txFee\":100000000}","clientType":"1","locale":"zh","sign":"842323640cd214f80e0cfe27651341c26f94d7b31fd4bea402a9e623eaf6805e","version":"1.0.0"}
+08-22 16:00:57.248 14255 14255 I yrh     : 424638b165db34f066cb2d0d86131866
+08-22 16:00:57.278 14255 15793 I http    : request--url-->>http://139.9.3.2:8001/managerPTN/transfer
+08-22 16:00:57.278 14255 15793 I http    : request--method-->>POST
+08-22 16:00:57.440 14255 15797 W Bitmap  : Called reconfigure on a bitmap that is in use! This may cause graphical corruption!
+08-22 16:00:57.474 14255 15793 I http    : response time-->>196.171406
+08-22 16:00:57.474 14255 15793 I http    : response data-->>>{"code":"0","message":null,"data":{"txHash":"0x6a82d4a7ed74b0492c74c9f78b8d28fbe88a2833d5ce07a62cf33e3fa4cf670f"}}
+08-22 16:00:58.032 14255 14255 I nubialog:  finished message:{ delay=529ms dispatching=-529ms sending=-557ms callback=io.reactivex.android.schedulers.HandlerScheduler$ScheduledRunnable obj=io.reactivex.android.schedulers.HandlerScheduler$HandlerWorker target=android.os.Handler }
+08-22 16:00:58.032 14255 14255 I Choreographer: Skipped 32 frames!  The application may be doing too much work on its main thread.
+08-22 16:00:58.050 14255 14255 I yrh     : com.hande.wanchain.wallet            Ìí¼ÓActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.TranscationResultForVoteActivity}
+08-22 16:00:58.054 14255 14255 I yrh     : txHash======>>>>0x6a82d4a7ed74b0492c74c9f78b8d28fbe88a2833d5ce07a62cf33e3fa4cf670f
+08-22 16:00:58.470 14255 14255 I yrh     : com.hande.wanchain.wallet            ÒÆ³ýActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.center.PublishPrc20AddActivity}
+08-22 16:01:03.432 14255 14255 I yrh     : com.hande.wanchain.wallet            ÒÆ³ýActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.TranscationResultForVoteActivity}
+
+
+
+
+
+08-22 16:44:44.595 14255 14255 I CameraPreview: Starting preview
+08-22 16:44:45.047 14255 18687 I AutoFocusManager: Current focus mode 'auto'; use auto focus? true
+08-22 16:44:46.781 14255 14255 E ExtMediaPlayer-JNI: env->IsInstanceOf fails
+08-22 16:44:46.781 14255 14255 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+08-22 16:44:46.781 14255 14255 E ExtMediaPlayer-JNI: env->IsInstanceOf fails
+08-22 16:44:46.781 14255 14255 E MediaPlayer-JNI: JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0
+08-22 16:44:46.884   489  9129 E AudioFlinger: ApplicationFreeze active pid:489  target pid: 14255
+08-22 16:44:46.919 14255 14255 I yrh     : com.hande.wanchain.wallet            Ìí¼ÓActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.center.InitContractActivity}
+08-22 16:44:46.928 14255 14255 I http    : ===>>>{"bdata":"{\"address\":\"PCGTta3M4t3yXu8uRgkKvaWd2d8DREThG43\",\"coinSymbol\":\"PTN\"}","clientType":"1","locale":"zh","sign":"4ff05b030c79a679b204a53743f54b5cd8603b827962af7216105f9ab10cc540","version":"1.0.0"}
+08-22 16:44:46.929 14255 14255 I yrh     : 424638b165db34f066cb2d0d86131866
+08-22 16:44:46.939 14255 18066 I http    : request--url-->>http://139.9.3.2:8001/managerPTN/getContractInfoByAddr
+08-22 16:44:46.939 14255 18066 I http    : request--method-->>POST
+08-22 16:44:46.951   489  9129 E AudioFlinger: ApplicationFreeze active pid:489  target pid: 14255
+08-22 16:44:46.983   489  9129 E AudioFlinger: ApplicationFreeze active pid:489  target pid: 14255
+08-22 16:44:47.025   489  3453 I CameraService: disconnect: Disconnected client for camera 0 for PID 14255
+08-22 16:44:47.033   489  3453 E AudioFlinger: ApplicationFreeze active pid:489  target pid: 14255
+08-22 16:44:47.076 14255 18066 I http    : response time-->>136.357656
+08-22 16:44:47.076 14255 18066 I http    : response data-->>>{"code":"0","message":null,"data":{"contract_id":"0000000000000000000000000000000000000002","contract_address":"PCGTta3M4t3yXu8uRgkKvaWd2d8DREThG43","tpl_id":"","contract_name":"PRC20","status":1,"creator":"P1111111111111111111114oLvT2","creation_time":"2019-08-21T18:04:06+08:00","template":{"tpl_id":"","tpl_name":"PRC20","tpl_description":"Fungible Token","install_path":"","tpl_version":"v1.0.0","abi":"[{\"constant\": false,\"inputs\": [{\"name\": \"Name\",\"type\": \"string\"},{\"name\": \"Name\",\"type\": \"string\"},{\"name\": \"Decimals\",\"type\": \"string\"},{\"name\": \"TotalSupply\",\"type\": \"string\"},{\"name\": \"SupplyAddress\",\"type\": \"string\"}],\"name\": \"createToken\",\"outputs\": [{\"name\": \"\",\"type\": \"string\"}],\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"function\"},{\"constant\": false,\"inputs\": [{\"name\": \"Symbol\",\"type\": \"string\"},{\"name\": \"SupplyAmout\",\"type\": \"string\"}],\"name\": \"supplyToken\",\"outputs\": [{\"name\": \"\",\"type\": \"string\"}],\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"function\"},{\"constant\": false,\"inputs\": [{\"name\": \"Symbol\",\"type\": \"string\"},{\"name\": \"NewSupplyAddr\",\"type\": \"string\"}],\"name\": \"changeSupplyAddr\",\"outputs\": [{\"name\": \"\",\"type\": \"string\"}],\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"function\"},{\"constant\": false,\"inputs\": [{\"name\": \"Symbol\",\"type\": \"string\"}],\"name\": \"frozenToken\",\"outputs\": [{\"name\": \"\",\"type\": \"string\"}],\"payable\": false,\"stateMutability\": \"nonpayable\",\"type\": \"function\"},{\"constant\": true,\"inputs\": [{\"name\": \"Symbol\",\"type\": \"string\"}],\"name\": \"getTokenInfo\",\"outputs\": [{\"name\": \"\",\"type\": \"string\"}],\"payable\": false,\"stateMutability\": \"view\",\"type\": \"function\"},{\"constant\": true,\"inputs\": [],\"name\": \"getAllTokenInfo\",\"outputs\": [{\"name\": \"\",\"type\": \"string\"}],\"payable\": false,\"stateMutability\": \"view\",\"type\": \"function\"}]","language":"Golang","addr_hash":[],"size":0,"creator":""}}}
+08-22 16:44:47.614 14255 14255 I nubialog:  finished message:{ delay=537ms dispatching=-537ms sending=-538ms callback=io.reactivex.android.schedulers.HandlerScheduler$ScheduledRunnable obj=io.reactivex.android.schedulers.HandlerScheduler$HandlerWorker target=android.os.Handler }
+08-22 16:44:47.616 14255 14255 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+08-22 16:44:47.629 14255 14255 I yrh     : com.hande.wanchain.wallet            ÒÆ³ýActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.LocalCaptureActivity}
+08-22 16:45:10.770 14255 14255 I http    : ===>>>{"bdata":"{\"from\":\"P1AuNMS3dSa4vQMpuGPvTjsFSkbKneWRNwC\",\"coinSymbol\":\"PTN\",\"txData\":\"f9011df90118f8e380b8e0f8def893f891b86b483045022100d7278c4e3152b304dfe16535906457883f9efc54b879144abb1b3b5be0dfcfc10220247978d33a567751957453ae3e093c78093f48fecd511ae22025b32bf52fd14681210200e7dd3f562653eeb2ca5a65f373bed84f3d6a26f7f53b4087556cca7693b7e080a0a7a1f7e30e0806d6a3bfbbe6cfa7441e8fe2a91078cc91cb67d1a74777b7f8d88080f846f844861540f30ff7009976a9146ca09607278f30916e0c586e65c3382ae85610b588ace290400082bb080000000000000000000000900000000000000000000000000000000080f266b0ef940000000000000000000000000000000000000002d88b737570706c79546f6b656e853136303030854141303031808080\",\"txFee\":100000000}","clientType":"1","locale":"zh","sign":"1157d6b11b65ab669d13096e49de7af58330ddfa3b43706884af30bc0d3400e9","version":"1.0.0"}
+08-22 16:45:10.771 14255 14255 I yrh     : 424638b165db34f066cb2d0d86131866
+08-22 16:45:10.799 14255 18066 I http    : request--url-->>http://139.9.3.2:8001/managerContract/transfer
+08-22 16:45:10.799 14255 18066 I http    : request--method-->>POST
+08-22 16:45:10.999 14255 18811 W Bitmap  : Called reconfigure on a bitmap that is in use! This may cause graphical corruption!
+08-22 16:45:11.021 14255 18066 I http    : response time-->>221.702708
+08-22 16:45:11.022 14255 18066 I http    : response data-->>>{"code":"0","message":null,"data":"0x0dc1fbc992fd4812de233d696a0065ecef452ec993295c20791c2f8366ab1dfb"}
+08-22 16:45:11.024 14255 14255 I yrh     : 0x0dc1fbc992fd4812de233d696a0065ecef452ec993295c20791c2f8366ab1dfb
+08-22 16:45:11.552 14255 14255 I nubialog:  finished message:{ delay=527ms dispatching=-527ms sending=-528ms callback=io.reactivex.android.schedulers.HandlerScheduler$ScheduledRunnable obj=io.reactivex.android.schedulers.HandlerScheduler$HandlerWorker target=android.os.Handler }
+08-22 16:45:11.558 14255 14255 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+08-22 16:45:11.577 14255 14255 I yrh     : com.hande.wanchain.wallet            Ìí¼ÓActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.TranscationResultForVoteActivity}
+08-22 16:45:11.582 14255 14255 I yrh     : txHash======>>>>0x0dc1fbc992fd4812de233d696a0065ecef452ec993295c20791c2f8366ab1dfb
+08-22 16:45:11.950 14255 14255 I yrh     : com.hande.wanchain.wallet            ÒÆ³ýActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.center.InitContractActivity}
+08-22 16:45:16.973 14255 14255 I yrh     : com.hande.wanchain.wallet            ÒÆ³ýActivity            ComponentInfo{com.hande.wanchain.wallet/com.hande.wanchain.wallet.activity.TranscationResultForVoteActivity}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+senario:
+  - id: Android_003
+    title: address
+    condition: ~
+testcase:
+  - element_location: com.hande.wanchain.wallet:id/main_bottom_text_2
+    location_type: id
+    operation_type: click
+  - element_location: com.hande.wanchain.wallet:id/main_top_bar_add_address
+    location_type: id
+    operation_type: click
+  - element_location: com.hande.wanchain.wallet:id/show_coin_kinds_address_name
+    location_type: id
+    operation_type: send_keys
+    text: P1EVkpaTCgcWZT4uSkd3vM3sVF8RAY7Gc1A
+  - element_location: com.hande.wanchain.wallet:id/show_coin_kinds
+    location_type: id
+  - element_location: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.ImageView
+    location_type: id
+    operation_type: click
+  - element_location: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.TextView
+    location_type: id
+    operation_type: click
+  - element_location: com.hande.wanchain.wallet:id/show_new_address
+    location_type: id
+    operation_type: send_keys
+    text: P1EVkpaTCgcWZT4uSkd3vM3sVF8RAY7Gc1A
+  - element_location: com.hande.wanchain.wallet:id/new_address_submit
+    location_type: id
+    operation_type: click
+assert:
+  - element_location: com.hande.wanchain.wallet:id/password_confirm
+    location_type: id
+  - element_location: com.jianshu.haruki:id/tab_more
+    location_type: id

@@ -1,0 +1,43 @@
+senario:
+  - id: Android_001
+    title: recover_wallet
+    condition: ~
+testcase:
+  - element_location: com.hande.wanchain.wallet:id/recover_wallet
+    location_type: id
+    operation_type: click
+  - element_location: com.hande.wanchain.wallet:id/seed_recover
+    location_type: id
+    operation_type: click
+  - element_location: com.hande.wanchain.wallet:id/words
+    location_type: id
+    operation_type: send_keys
+    text: [resemble,forse,where,rhythm,input,sweet,logic,update,museum,taxi,salt,awkward]
+  - element_location: com.hande.wanchain.wallet:id/next_step
+    location_type: id
+    operation_type: click
+  - element_location: com.hande.wanchain.wallet:id/password_edit
+    location_type: id
+    operation_type: send_keys
+    text: pallet2019
+  - element_location: com.hande.wanchain.wallet:id/password_confirm
+    location_type: id
+    operation_type: send_keys
+    text: pallet2019
+  - element_location: com.hande.wanchain.wallet:id/chinese_type
+    location_type: id
+    operation_type: click
+  - element_location: com.hande.wanchain.wallet:id/next_step
+    location_type: id
+    operation_type: click
+  - element_location: com.hande.wanchain.wallet:id/main_top_bar_title
+    location_type: id
+    operation_type: wait_element
+  - element_location: com.android.packageinstaller:id/permission_allow_button
+    location_type: id
+    operation_type: click
+assert:
+  - element_location: com.hande.wanchain.wallet:id/password_confirm
+    location_type: id
+  - element_location: com.jianshu.haruki:id/tab_more
+    location_type: id
